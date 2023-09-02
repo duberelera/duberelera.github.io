@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "duberelera.github.io"
+  title: "Medición Forestal"
   navbar:
     left:
       - href: index.qmd
