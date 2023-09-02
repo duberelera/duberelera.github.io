@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Medición Forestal"
+  title: "Duberlí Elera"
   navbar:
     left:
       - href: index.qmd

@@ -1,5 +1,6 @@
 ---
-title: "duberelera.github.io"
+title: "Medición Forestal"
+subtitle: "MSc. Duberli G. Elera Gonzales"
 ---
 
 This is a Quarto website.
