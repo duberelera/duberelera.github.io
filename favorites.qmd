@@ -2,3 +2,9 @@
 title: "Favorites"
 editor: visual
 ---
+
+Bienvenidos a mis tutoriales favoritos
+
+```{r}
+1 + 1
+```
