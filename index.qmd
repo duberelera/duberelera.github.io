@@ -12,7 +12,7 @@ about:
       href: https://twitter.com/duberlielera
     - icon: github
       href: https://github.com/duberelera
-    - text: "{{< iconify academicons:google-scholar >}}"
+    - text: Scholar
       href: https://scholar.google.com/citations?user=NbkFHvEAAAAJ&hl=es
     - text: Email
       href: mailto:duberelera@gmail.com
