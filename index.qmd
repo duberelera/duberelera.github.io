@@ -6,13 +6,13 @@ about:
   image-shape: round
   image-width: 10em
   links: 
-    - icon: LinkedIn
+    - icon: linkedin
       href: https://www.linkedin.com/in/duber-elera/
     - icon: twitter
       href: https://twitter.com/duberlielera
     - icon: github
       href: https://github.com/duberelera
-    - icon: email
+    - icon: mailto
       href: mailto:duberelera@gmail.com
 date: "`r Sys.Date()`"
 ---
