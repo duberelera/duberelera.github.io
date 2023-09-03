@@ -1,8 +1,9 @@
 ---
 title: "Duberli Elera Gonzales"
-image: duberli.jpg
 about: 
   template: jolla
+  id: about-block
+  image: 'img/duberli.jpg'
   image-shape: round
   image-width: 10em
   links: 
@@ -16,16 +17,18 @@ about:
       href: https://scholar.google.com/citations?user=NbkFHvEAAAAJ&hl=es
     - icon: envelope
       href: mailto:duberelera@gmail.com
-date: "`r Sys.Date()`"
 ---
+
+::: {#about-block}
+:::
 
 # Hola a tod\@s!
 
-Soy profesor asociado e investigador en la [Universidad Nacional Autónoma de Chota (UNACH)](https://www.unach.edu.pe/) responsable del grupo de investigación de Biometría y Geomática Forestal (BiGFor). Antes de trabajar como profesor universitario, ocupé el puesto de jefe de calidad y monitoreo forestal de Reforestadora Amazónica SA. Me gradué como Magister Scientiae en Ciencia Forestal en la Universidad Federal de Viçosa y actualmente estoy desarrollando mis estudios de doctorado en la Universidad Federal Rural de Pernambuco, Brasil.
+Soy profesor asociado e investigador en la [Universidad Nacional Autónoma de Chota ](https://www.unach.edu.pe/) - **UNACH**, responsable del Grupo de Investigación de **Biometría y Geomática Forestal - BiGFor**. Antes de trabajar como profesor universitario, ocupé el puesto de jefe de calidad y monitoreo forestal de Reforestadora Amazónica SA. Me gradué como Magister Scientiae en Ciencia Forestal en la Universidad Federal de Viçosa y actualmente estoy desarrollando mis estudios de doctorado en la Universidad Federal Rural de Pernambuco, Brasil.
 
 Mi trabajo de investigación se centra en el monitoreo del crecimiento de plantaciones forestales y el uso de los sistemas de informaciones geográficas en el manejo forestal. Mi trabajo busca fomentar el uso de herramientas informáticas para el análisis de datos geoespaciales, asociados a la silvicultura y el manejo forestal. Trabajo en el desarrollo de bases de datos espaciales y espaciotemporales para comprender los patrones geográficos y temporales del crecimiento de plantaciones forestales, evaluar su relación con factores ambientales y de manejo, buscando la generación de información para una toma de desiciones basada en evidencias técnicas y científicas.
 
-He publicado diversos [artículos científicos en revistas nacionales e internaciones](https://scholar.google.com/citations?user=NbkFHvEAAAAJ&hl=es&oi=ao), actualmente soy [Investigador RENACYT nivel V del Consejo Nacional de Ciencia, Tecnología e Innovación Tecnológica](https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=85911).
+He publicado diversos [artículos científicos en revistas nacionales e internaciones](https://scholar.google.com/citations?user=NbkFHvEAAAAJ&hl=es&oi=ao), actualmente soy [Investigador RENACYT](https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=85911) nivel V del **Consejo Nacional de Ciencia, Tecnología e Innovación Tecnológica**.
 
 ```{r}
 1 + 1

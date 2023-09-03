@@ -1,22 +1,48 @@
-project:
-  type: website
-  output-dir: docs
-
 website:
   title: "Duberlí Elera"
   navbar:
+    pinned: true
+    
+    # your sub-pages
     left:
       - href: index.qmd
         text: Home
       - about.qmd
-      - tutoriales.qmd
+      - text: 'Tutoriales'
+        href: tutoriales/index.qmd
       - favorites.qmd
+
+
+# Don't touch unless you know what you are doing :) ------------
+  search: 
+    location: navbar
+    type: textbox
+  page-footer: 
+    center: |
+      <span class="faux-block">&#169; 2023 Duberli Elera CC BY-SA 4.0</span>
+
+project:
+  type: website
+  output-dir: docs
+
+  preview: 
+    port: 22222
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+execute:
+  freeze: true
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
-    toc: true
-
-
-
+    fontsize: 1.1em
+    theme: 
+      - pulse
+      - html/styles.scss
+    toc: false
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
