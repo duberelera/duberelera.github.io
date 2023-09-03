@@ -8,9 +8,10 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - text: 'Tutoriales'
-        href: tutoriales/index.qmd
-      - favorites.qmd
+      - text: 'Tutorials'
+        href: tutorials/index.qmd
+      - text: 'Research'
+        href: research.qmd
 
 
 # Don't touch unless you know what you are doing :) ------------
