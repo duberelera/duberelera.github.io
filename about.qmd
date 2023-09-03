@@ -1,5 +1,8 @@
 ---
 title: "About"
+subtitle: "MSc. Duberli G. Elera Gonzales"
+date: "`r Sys.Date()`"
+editor: visual
 ---
 
 About this site

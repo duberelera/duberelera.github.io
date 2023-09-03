@@ -4,7 +4,6 @@ subtitle: 'R Básico: Primeros Pasos'
 author: "MSc. Duberlí G. Elera G."
 date: "`r Sys.Date()`"
 format: html
-editor: visual
 ---
 
 ```{r setup, include=FALSE}
