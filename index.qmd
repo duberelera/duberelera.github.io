@@ -12,7 +12,9 @@ about:
       href: https://twitter.com/duberlielera
     - icon: github
       href: https://github.com/duberelera
-    - icon: mailto
+    - icon: "{{< ai google-scholar >}}"
+      href: https://scholar.google.com/citations?user=NbkFHvEAAAAJ&hl=es
+    - text: Email
       href: mailto:duberelera@gmail.com
 date: "`r Sys.Date()`"
 ---
