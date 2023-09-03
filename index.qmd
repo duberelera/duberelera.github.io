@@ -2,7 +2,7 @@
 title: "Duberli Elera Gonzales"
 image: duberli.jpg
 about: 
-  template: trestles
+  template: jolla
   image-shape: round
   image-width: 10em
   links: 
@@ -14,7 +14,7 @@ about:
       href: https://github.com/duberelera
     - text: Scholar
       href: https://scholar.google.com/citations?user=NbkFHvEAAAAJ&hl=es
-    - text: Email
+    - icon: envelope
       href: mailto:duberelera@gmail.com
 date: "`r Sys.Date()`"
 ---
