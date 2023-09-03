@@ -1,0 +1,14 @@
+{
+  "hash": "b920768f26e3bad50b02ebe1ec556a66",
+  "result": {
+    "markdown": "---\ntitle: \"Artículos Científicos\"\nsubtitle: \"MSc. Duberli G. Elera Gonzales\"\ndate: \"2023-09-03\"\n---\n\n\nBienvenidos a mis tutoriales favoritos\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

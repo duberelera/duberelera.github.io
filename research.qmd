@@ -1,0 +1,12 @@
+---
+title: "Artículos Científicos"
+subtitle: "MSc. Duberli G. Elera Gonzales"
+date: "`r Sys.Date()`"
+---
+
+Bienvenidos a mis tutoriales favoritos
+
+
+```{r}
+1 + 1
+```
