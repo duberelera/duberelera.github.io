@@ -4,17 +4,15 @@ image: duberli.jpg
 about: 
   template: trestles
   image-shape: round
-  image-width: 23em
+  image-width: 10em
   links: 
-    - text: LinkedIn
+    - icon: LinkedIn
       href: https://www.linkedin.com/in/duber-elera/
-    - text: Twitter
+    - icon: twitter
       href: https://twitter.com/duberlielera
-    - text: Twitter
+    - icon: github
       href: https://github.com/duberelera
-    - text: Twitter
-      href: https://github.com/duberelera
-    - text: Email
+    - icon: email
       href: mailto:duberelera@gmail.com
 date: "`r Sys.Date()`"
 ---
