@@ -1,8 +1,25 @@
 ---
-title: "Bienvenidos"
-subtitle: "MSc. Duberli G. Elera Gonzales"
+title: "Duberli Elera Gonzales"
+image: duberli.jpg
+about: 
+  template: trestles
+  image-shape: round
+  image-width: 23em
+  links: 
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/duber-elera/
+    - text: Twitter
+      href: https://twitter.com/duberlielera
+    - text: Twitter
+      href: https://github.com/duberelera
+    - text: Twitter
+      href: https://github.com/duberelera
+    - text: Email
+      href: mailto:duberelera@gmail.com
 date: "`r Sys.Date()`"
 ---
+
+# Hola a tod\@s!
 
 Soy profesor asociado e investigador en la [Universidad Nacional Autónoma de Chota (UNACH)](https://www.unach.edu.pe/) responsable del grupo de investigación de Biometría y Geomática Forestal (BiGFor). Antes de trabajar como profesor universitario, ocupé el puesto de jefe de calidad y monitoreo forestal de Reforestadora Amazónica SA. Me gradué como Magister Scientiae en Ciencia Forestal en la Universidad Federal de Viçosa y actualmente estoy desarrollando mis estudios de doctorado en la Universidad Federal Rural de Pernambuco, Brasil.
 
