@@ -1,7 +1,7 @@
 {
-  "hash": "c39dc608e14b84678f7ae7fd4fc83fce",
+  "hash": "49e52c70ea3c1a97f5a8d6715c49b100",
   "result": {
-    "markdown": "---\ntitle: \"About\"\nsubtitle: \"MSc. Duberli G. Elera Gonzales\"\ndate: \"2023-09-03\"\neditor: visual\n---\n\n\nAbout this site\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "markdown": "---\ntitle: \"About\"\nsubtitle: \"MSc. Duberli G. Elera Gonzales\"\ndate: \"2023-09-03\"\nformat: html\neditor: visual\n---\n\n\n\n\nSección en construcción",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
