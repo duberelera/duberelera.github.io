@@ -4,9 +4,54 @@ subtitle: "MSc. Duberli G. Elera Gonzales"
 date: "`r Sys.Date()`"
 ---
 
-Bienvenidos a mis tutoriales favoritos
+## [**Improving 3-PG calibration and parameterization using artificial neural networks**](https://doi.org/10.1016/j.ecolmodel.2023.110301)
 
+This study aimed to evaluate the use of ANN to predict the parameters of the 3-PG model, which generate greater sensitivity in some outputs and present greater variation.
 
-```{r}
-1 + 1
-```
+## [**Configuration of the Deep Neural Network Hyperparameters for the Hypsometric Modeling of the *Guazuma crinita* Mart. in the Peruvian Amazon**](https://doi.org/10.3390/f13050697)
+
+The objective of this study was to evaluate the efficiency of using a deep learning neural network to predict the total height of *Guazuma crinita* Mart. from a large-scale continuous forest inventory, having specific objectives: (i) to configure and train the neural network and (ii) to evaluate the performance of the functions for total height prediction.
+
+## [**Artificial intelligence in education: a review of the literature in international scientific journals**](https://doi.org/10.17162/au.v12i1.974)
+
+The objective of this article is to identify the contributions of AI to education over the last five decades, to present the scientific journals with the highest impact rates in the area of AI over the last 10 years and to analyse the role that AI will play in post-Covid-19 education.
+
+## [**When, where and what cultivate: An optimization model for rural property planning**](https://doi.org/10.1016/j.jclepro.2020.125741)
+
+Sustainable production and land use planning are recurring challenges in the agricultural and forestry activities. In this context, a mathematical programming model is proposed that allows for both optimal production planning and its updating, without land exploitation. The proposed model, based on cash flows, maximizes the overall profit and includes two types of decision variables: the first relates to design of new activities, while the second concerns adaptation of existing activities.
+
+### [**Cambio de cobertura y uso de la tierra por actividades antrópicas en el distrito de Chota, periodo 2003/2019**](https://doi.org/10.37518/2663-6360X2021v4n2p14)
+
+Esta investigación tiene por objetivo evaluar el cambio de cobertura y uso de la tierra por actividades antrópicas en el distrito de Chota - Perú, periodo 2003-2019.
+
+## [**Data-based agroecological zoning of *Acrocomia aculeata*: GIS modeling and ecophysiological aspects into a Brazilian representative occurrence area**](https://doi.org/10.1016/j.indcrop.2020.112749)
+
+This paper main objective is to estimate the productive potential of eight fruit components (among oil content, weight, volume and internal structures dry mass) for a wide natural occurrence area of macauba trees, the Minas Gerais State, in Brazil.
+
+## [**Almacenamiento de carbono en sistemas agroforestales**](https://doi.org/10.37787/pakamuros-unj.v8i4.144)
+
+Carta al Editor con el objetivo de presentar importantes observaciones al artículo "Almacenamiento de carbono en sistemas agroforestales cafetaleros en las provincias de Jaén y San Ignacio, Cajamarca" publicado en el Vol. 4 Num. 1 (2016).
+
+## [**Optimized allocation of forest restoration zones to minimize soil losses in watersheds**](https://doi.org/10.1016/j.jenvman.2020.110923)
+
+The objective of this study was to develop a methodology to optimize forest restoration zones allocation in order to minimize soil loss in watersheds and fill the literature gap.
+
+## [**Potential planting areas for native tree species in minas gerais state, Brazil, based on environmental variables and wood demand**](https://doi.org/10.1016/j.ecolmodel.2020.109211)
+
+The objective of this study was to use the MaxEnt model and spatial statistics techniques to identify potential regions of Minas Gerais (MG) State (Southeast Region, Brazil) suitable for planting economically important native tree species.
+
+## [**Optimization of Skid Trails and Log Yards on the Amazon Forest**](https://doi.org/10.3390/f10030252)
+
+In this study, we used Dijkstra algorithm to solve a network design problem, which involves determining the optimal allocation of yards and skid trails to access selected trees for harvesting. Four planning scenarios and three harvest cycles in a forest managed under the RIL system, located on the Brazilian Amazon, were con
+
+## [**Determinación de la intensidad de muestreo en inventario forestal continuo en un bosque tropical lluvioso denso, Amazonia Oriental, Brasil**](https://www.scielo.sa.cr/scielo.php?pid=S2215-25042018000200047&script=sci_arttext&tlng=en)
+
+El objetivo de este estudio fue desarrollar una metodología para determinar la intensidad de muestreo de parcelas permanentes que cumpla las exigencias del Principio n° 08 del FSC (CBMF, 2002), de la NT/IBAMA 01/07 y del Manual Técnico para la instalación y medición de parcelas permanentes.
+
+## [**Modelagem do crescimento e espacialização da capacidade produtiva de plantios de bolaina (*Guazuma crinita* Mart.) na Amazônia central peruana**](https://locus.ufv.br//handle/123456789/22110)
+
+O objetivo deste estudo foi modelar o crescimento e espacializar a capacidade produtiva de plantios de *Guazuma crinita* Mart. na Amazônia central peruana.
+
+## [**Spatial and temporal distribution of urban heat islands**](https://doi.org/10.1016/j.scitotenv.2017.05.275)
+
+The purpose of this study is to evaluate the spatial and temporal distribution of heat islands in Vila Velha, ES, Brazil using the mono-window algorithm.

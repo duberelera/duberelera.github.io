@@ -46,13 +46,97 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Sección en construcción"
   },
   {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Artículos Científicos",
     "section": "",
-    "text": "Bienvenidos a mis tutoriales favoritos\n\n1 + 1\n\n[1] 2"
+    "text": "This study aimed to evaluate the use of ANN to predict the parameters of the 3-PG model, which generate greater sensitivity in some outputs and present greater variation."
+  },
+  {
+    "objectID": "research.html#improving-3-pg-calibration-and-parameterization-using-artificial-neural-networks",
+    "href": "research.html#improving-3-pg-calibration-and-parameterization-using-artificial-neural-networks",
+    "title": "Artículos Científicos",
+    "section": "",
+    "text": "This study aimed to evaluate the use of ANN to predict the parameters of the 3-PG model, which generate greater sensitivity in some outputs and present greater variation."
+  },
+  {
+    "objectID": "research.html#configuration-of-the-deep-neural-network-hyperparameters-for-the-hypsometric-modeling-of-the-guazuma-crinita-mart.-in-the-peruvian-amazon",
+    "href": "research.html#configuration-of-the-deep-neural-network-hyperparameters-for-the-hypsometric-modeling-of-the-guazuma-crinita-mart.-in-the-peruvian-amazon",
+    "title": "Artículos Científicos",
+    "section": "Configuration of the Deep Neural Network Hyperparameters for the Hypsometric Modeling of the Guazuma crinita Mart. in the Peruvian Amazon",
+    "text": "Configuration of the Deep Neural Network Hyperparameters for the Hypsometric Modeling of the Guazuma crinita Mart. in the Peruvian Amazon\nThe objective of this study was to evaluate the efficiency of using a deep learning neural network to predict the total height of Guazuma crinita Mart. from a large-scale continuous forest inventory, having specific objectives: (i) to configure and train the neural network and (ii) to evaluate the performance of the functions for total height prediction."
+  },
+  {
+    "objectID": "research.html#artificial-intelligence-in-education-a-review-of-the-literature-in-international-scientific-journals",
+    "href": "research.html#artificial-intelligence-in-education-a-review-of-the-literature-in-international-scientific-journals",
+    "title": "Artículos Científicos",
+    "section": "Artificial intelligence in education: a review of the literature in international scientific journals",
+    "text": "Artificial intelligence in education: a review of the literature in international scientific journals\nThe objective of this article is to identify the contributions of AI to education over the last five decades, to present the scientific journals with the highest impact rates in the area of AI over the last 10 years and to analyse the role that AI will play in post-Covid-19 education."
+  },
+  {
+    "objectID": "research.html#when-where-and-what-cultivate-an-optimization-model-for-rural-property-planning",
+    "href": "research.html#when-where-and-what-cultivate-an-optimization-model-for-rural-property-planning",
+    "title": "Artículos Científicos",
+    "section": "When, where and what cultivate: An optimization model for rural property planning",
+    "text": "When, where and what cultivate: An optimization model for rural property planning\nSustainable production and land use planning are recurring challenges in the agricultural and forestry activities. In this context, a mathematical programming model is proposed that allows for both optimal production planning and its updating, without land exploitation. The proposed model, based on cash flows, maximizes the overall profit and includes two types of decision variables: the first relates to design of new activities, while the second concerns adaptation of existing activities.\n\nCambio de cobertura y uso de la tierra por actividades antrópicas en el distrito de Chota, periodo 2003/2019\nEsta investigación tiene por objetivo evaluar el cambio de cobertura y uso de la tierra por actividades antrópicas en el distrito de Chota - Perú, periodo 2003-2019."
+  },
+  {
+    "objectID": "research.html#data-based-agroecological-zoning-of-acrocomia-aculeata-gis-modeling-and-ecophysiological-aspects-into-a-brazilian-representative-occurrence-area",
+    "href": "research.html#data-based-agroecological-zoning-of-acrocomia-aculeata-gis-modeling-and-ecophysiological-aspects-into-a-brazilian-representative-occurrence-area",
+    "title": "Artículos Científicos",
+    "section": "Data-based agroecological zoning of Acrocomia aculeata: GIS modeling and ecophysiological aspects into a Brazilian representative occurrence area",
+    "text": "Data-based agroecological zoning of Acrocomia aculeata: GIS modeling and ecophysiological aspects into a Brazilian representative occurrence area\nThis paper main objective is to estimate the productive potential of eight fruit components (among oil content, weight, volume and internal structures dry mass) for a wide natural occurrence area of macauba trees, the Minas Gerais State, in Brazil."
+  },
+  {
+    "objectID": "research.html#almacenamiento-de-carbono-en-sistemas-agroforestales",
+    "href": "research.html#almacenamiento-de-carbono-en-sistemas-agroforestales",
+    "title": "Artículos Científicos",
+    "section": "Almacenamiento de carbono en sistemas agroforestales",
+    "text": "Almacenamiento de carbono en sistemas agroforestales\nCarta al Editor con el objetivo de presentar importantes observaciones al artículo “Almacenamiento de carbono en sistemas agroforestales cafetaleros en las provincias de Jaén y San Ignacio, Cajamarca” publicado en el Vol. 4 Num. 1 (2016)."
+  },
+  {
+    "objectID": "research.html#optimized-allocation-of-forest-restoration-zones-to-minimize-soil-losses-in-watersheds",
+    "href": "research.html#optimized-allocation-of-forest-restoration-zones-to-minimize-soil-losses-in-watersheds",
+    "title": "Artículos Científicos",
+    "section": "Optimized allocation of forest restoration zones to minimize soil losses in watersheds",
+    "text": "Optimized allocation of forest restoration zones to minimize soil losses in watersheds\nThe objective of this study was to develop a methodology to optimize forest restoration zones allocation in order to minimize soil loss in watersheds and fill the literature gap."
+  },
+  {
+    "objectID": "research.html#potential-planting-areas-for-native-tree-species-in-minas-gerais-state-brazil-based-on-environmental-variables-and-wood-demand",
+    "href": "research.html#potential-planting-areas-for-native-tree-species-in-minas-gerais-state-brazil-based-on-environmental-variables-and-wood-demand",
+    "title": "Artículos Científicos",
+    "section": "Potential planting areas for native tree species in minas gerais state, Brazil, based on environmental variables and wood demand",
+    "text": "Potential planting areas for native tree species in minas gerais state, Brazil, based on environmental variables and wood demand\nThe objective of this study was to use the MaxEnt model and spatial statistics techniques to identify potential regions of Minas Gerais (MG) State (Southeast Region, Brazil) suitable for planting economically important native tree species."
+  },
+  {
+    "objectID": "research.html#optimization-of-skid-trails-and-log-yards-on-the-amazon-forest",
+    "href": "research.html#optimization-of-skid-trails-and-log-yards-on-the-amazon-forest",
+    "title": "Artículos Científicos",
+    "section": "Optimization of Skid Trails and Log Yards on the Amazon Forest",
+    "text": "Optimization of Skid Trails and Log Yards on the Amazon Forest\nIn this study, we used Dijkstra algorithm to solve a network design problem, which involves determining the optimal allocation of yards and skid trails to access selected trees for harvesting. Four planning scenarios and three harvest cycles in a forest managed under the RIL system, located on the Brazilian Amazon, were con"
+  },
+  {
+    "objectID": "research.html#determinación-de-la-intensidad-de-muestreo-en-inventario-forestal-continuo-en-un-bosque-tropical-lluvioso-denso-amazonia-oriental-brasil",
+    "href": "research.html#determinación-de-la-intensidad-de-muestreo-en-inventario-forestal-continuo-en-un-bosque-tropical-lluvioso-denso-amazonia-oriental-brasil",
+    "title": "Artículos Científicos",
+    "section": "Determinación de la intensidad de muestreo en inventario forestal continuo en un bosque tropical lluvioso denso, Amazonia Oriental, Brasil",
+    "text": "Determinación de la intensidad de muestreo en inventario forestal continuo en un bosque tropical lluvioso denso, Amazonia Oriental, Brasil\nEl objetivo de este estudio fue desarrollar una metodología para determinar la intensidad de muestreo de parcelas permanentes que cumpla las exigencias del Principio n° 08 del FSC (CBMF, 2002), de la NT/IBAMA 01/07 y del Manual Técnico para la instalación y medición de parcelas permanentes."
+  },
+  {
+    "objectID": "research.html#modelagem-do-crescimento-e-espacialização-da-capacidade-produtiva-de-plantios-de-bolaina-guazuma-crinita-mart.-na-amazônia-central-peruana",
+    "href": "research.html#modelagem-do-crescimento-e-espacialização-da-capacidade-produtiva-de-plantios-de-bolaina-guazuma-crinita-mart.-na-amazônia-central-peruana",
+    "title": "Artículos Científicos",
+    "section": "Modelagem do crescimento e espacialização da capacidade produtiva de plantios de bolaina (Guazuma crinita Mart.) na Amazônia central peruana",
+    "text": "Modelagem do crescimento e espacialização da capacidade produtiva de plantios de bolaina (Guazuma crinita Mart.) na Amazônia central peruana\nO objetivo deste estudo foi modelar o crescimento e espacializar a capacidade produtiva de plantios de Guazuma crinita Mart. na Amazônia central peruana."
+  },
+  {
+    "objectID": "research.html#spatial-and-temporal-distribution-of-urban-heat-islands",
+    "href": "research.html#spatial-and-temporal-distribution-of-urban-heat-islands",
+    "title": "Artículos Científicos",
+    "section": "Spatial and temporal distribution of urban heat islands",
+    "text": "Spatial and temporal distribution of urban heat islands\nThe purpose of this study is to evaluate the spatial and temporal distribution of heat islands in Vila Velha, ES, Brazil using the mono-window algorithm."
   }
 ]
