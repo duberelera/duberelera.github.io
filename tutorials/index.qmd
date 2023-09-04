@@ -1,7 +1,6 @@
 ---
 title: 'R aplicado a Medición Forestal'
-subtitle: 'R Básico: Primeros Pasos'
-author: "MSc. Duberlí G. Elera G."
+subtitle: 'Tutoriales para estudiantes de Ciencias Forestales'
 date: "`r Sys.Date()`"
 format: html
 ---
@@ -9,6 +8,8 @@ format: html
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+# **R Básico: Primeros Pasos**
+*Autor: MSc. Duberlí G. Elera Gonzales*
 
 # ¿Qué es y por qué usar `R`?
 
