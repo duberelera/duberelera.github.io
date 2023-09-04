@@ -3,6 +3,9 @@ title: "Artículos Científicos"
 subtitle: "MSc. Duberli G. Elera Gonzales"
 date: "`r Sys.Date()`"
 format: html
+resources:
+  - "pdf/2023_Ecuaciones_volumetricas_Alnus_acuminata_VIII_CONFLAT.pdf"
+  - "pdf/2023_Stock_anual_carbono_Hymenaea_VIII_CONFLAT.pdf"
 ---
 
 ```{r setup, include=FALSE}
@@ -12,6 +15,14 @@ knitr::opts_chunk$set(echo = TRUE)
 ## [**Improving 3-PG calibration and parameterization using artificial neural networks**](https://doi.org/10.1016/j.ecolmodel.2023.110301)
 
 This study aimed to evaluate the use of ANN to predict the parameters of the 3-PG model, which generate greater sensitivity in some outputs and present greater variation.
+
+## [**Ecuaciones volumétricas para Alnus acuminata Kunth (Betulaceae) de plantaciones forestales en los andes del norte peruano**](pdf/2023_Ecuaciones_volumetricas_Alnus_acuminata_VIII_CONFLAT.pdf)
+
+Este trabajo tiene como objetivo ajustar ecuaciones para estimar el volumen individual de árboles de *Alnus acuminata* Kunth, especie nativa que forma parte de los agroecosistemas andinos de Perú y que en los últimos años se viene estableciendo en macizos forestales, principalmente en la zona norte de los andes peruanos.
+
+## [**Stock anual de carbono en fustes de *Hymenaea courbaril* mediante el análisis de anillos de crecimiento y densitometría de rayos X**](pdf/2023_Stock_anual_carbono_Hymenaea_VIII_CONFLAT.pdf)
+
+El objetivo de este trabajo fue reconstruir el crecimiento secundario, y estimar el stock de carbono secuestrado anualmente en los fustes de árboles de la especie *H. courbaril*, en los bosques amazónicos del Perú.
 
 ## [**Configuration of the Deep Neural Network Hyperparameters for the Hypsometric Modeling of the *Guazuma crinita* Mart. in the Peruvian Amazon**](https://doi.org/10.3390/f13050697)
 
