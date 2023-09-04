@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.450">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="author" content="MSc. Duberlí G. Elera G.">
 <meta name="dcterms.date" content="2023-09-04">
-<title>Duberli Elera - Tutoriales para estudiantes de Ciencias Forestales</title>
+<title>Duberli Elera - R aplicado a Medición Forestal</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -18,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -26,8 +61,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -55,35 +88,7 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: [],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+}</script>
 </head>
 <body class="nav-fixed fullcontent">
 
@@ -109,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../tutorials/index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../tutorials/index.html" rel="" target="">
  <span class="menu-text">Tutorials</span></a>
   </li>  
   <li class="nav-item">
@@ -127,13 +132,20 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Tutoriales para estudiantes de Ciencias Forestales</h1>
+<h1 class="title">R aplicado a Medición Forestal</h1>
+<p class="subtitle lead">R Básico: Importar archivos</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>MSc. Duberlí G. Elera G. </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
@@ -146,25 +158,59 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-</header><section id="r-básico-primeros-pasos" class="level1"><h1><a href="../tutorials/t01_r_basico_primeros_pasos.html"><strong>R Básico: Primeros Pasos</strong></a></h1>
-<p>En este tutorial conocerá ¿Qué es <code>R</code>?, aprenderá la funcionalidad básica <code>R</code>, la sintaxis del mismo, el tipo de operaciones básicas que pueden ser ejecutadas, así como la creación y manipulación de objetos.</p>
-</section><section id="r-básico-matrices" class="level1"><h1><a href="../tutorials/t02_r_basico_matrices.html"><strong>R Básico: Matrices</strong></a></h1>
-<p>En este tutorial conocerá el tipo de objeto <em>Matrix</em>, un tipo especial de objeto en <code>R</code>. Una matriz es una colección de elementos del mismo tipo de datos (numéricos, caracteres o lógicos) dispuestos en filas y columnas.</p>
-</section><section id="r-básico-data-frame" class="level1"><h1><a href="../tutorials/t03_r_basico_dataframe.html"><strong>R Básico: Data Frame</strong></a></h1>
-<p>Una <code>data frame</code> es uno de los objetos más utilizados en <code>R</code>, es una estructura de datos que permite almacenar datos de diferentes tipos. En un nivel intuitivo, una <em>data frame</em> o marco de datos es como una matriz, con una estructura bidimensional de filas y columnas, con la diferencia que no todas las columnas están condicionadas a tener el mismo tipo de dato.</p>
-</section><section id="r-básico-importar-datos" class="level1"><h1><a href="../tutorials/t04_r_basico_readfiles.html"><strong>R Básico: Importar Datos</strong></a></h1>
-<p>Cuando trabajamos con datos, utilizamos diversos tipos de fuentes, esa particularidad hace que los datos que vamos a utilizar estén disponibles en diferentes tipos de archivos y <code>R</code> puede leer diferentes tipos de archivos, desde archivos de texto <code>.txt</code> hasta archivos georeferenciados como <em>shapefile</em> <code>.shp</code>.</p>
-
-
-
-</section><div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
+</header><section id="importar-archivos-en-r" class="level1"><h1>Importar archivos en <code>R</code>
+</h1>
+<p>Quienes trabajamos con datos, utilizamos diversos tipos de fuentes, esa particularidad hace que los datos que vamos a utilizar estén disponibles en diferentes tipos de archivos.</p>
+<p>Gracias al enorme potencial de <code>R</code>, utilizar diversos tipos de archivos no es un problema mayor, importar datos para poder leerlos y vizualizarlos en <code>R</code> es bastante simple y la capacidad de importación es amplia, desde archivos de texto <code>txt</code> o <code>csv</code> que se pueden importar con funciones del paquete básico de <code>R</code>, hasta archivos de excel <code>xlsx</code> o <code>xls</code> u otros softwares estadísticos e incluso desde otros lenguajes de programación.</p>
+<p><img src="images/importdata.png" class="img-fluid" style="width:30.0%"></p>
+<section id="importar-un-archivo-de-texto-.txt" class="level2"><h2 class="anchored" data-anchor-id="importar-un-archivo-de-texto-.txt">Importar un archivo de texto (.txt)</h2>
+<p>Los archivos con extensión TXT representan a archivos tipo <em>textfile</em> (archivo de texto). Es un archivo informático que estructura series de líneas de texto. Incluye caracteres de control como tabulaciones y saltos de línea, lo que facilita el almacenamiento de datos ordenados en forma de tablas. En windows puede crearse utilizando el comúnmente denominado <strong>Block de Notas</strong>.</p>
+<p><img src="images/files_txt.png" class="img-fluid" style="width:40.0%"><br><br>
+En la carpeta de mi proyecto de <code>R</code> tengo datos de medición de árboles guardados en el archivo <strong>archivo_de_texto.txt</strong> para poder leerlo en <code>R</code> utilizamos la función <code><a href="https://rdrr.io/r/utils/read.table.html">read.table()</a></code>, con tres argumentos principales <code>file</code>, <code>header</code> y <code>sep</code>.<br><strong>file</strong>, hace referencia al nombre del archivo incluido la extensión o tipo de formato.<br><strong>header</strong>, es un valor lógico, “TRUE” indica que la primera línea es el encabezado de los datos.<br><strong>sep</strong>, pide especificar la forma en la cual esta ordenada da línea de datos, en el caso del ejemplo que se muestra a continuacipon tiene un control de tabulación (tab).</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#Importar una tabla de datos en formato .txt</span></span>
+<span><span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.table</a></span><span class="op">(</span>file <span class="op">=</span> <span class="st">'files/archivo_de_texto.txt'</span>, header <span class="op">=</span> <span class="cn">TRUE</span>, sep <span class="op">=</span> <span class="st">'\t'</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  arbol dap   ht
+1     1 6.0 12.6
+2     2 6.7 13.9
+3     3 6.7 11.7
+4     4 7.0 12.8
+5     5 6.8 13.3
+6     6 8.6 16.3</code></pre>
+</div>
+</div>
+<p>En seguida creamos nuestro marco de datos utilizando la función <code><a href="https://rdrr.io/r/base/data.frame.html">data.frame()</a></code> cuyos argumentos son los tres vectores creados en el paso anterior y le asignamos el nombre <code>df</code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#Construyendo mi data frame o cuadro de datos</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>En nuestro ejemplo, creamos <code>df</code> con datos de mediciones del <strong>dap</strong> de 10 árboles.</p>
+<p>Cuando trabajos con mediciones forestales es usual calcular nuevas variables de tal manera que necesitamos ampliar nuestra <em>data frame</em> adicionando nuevas columnas, para ello utilizamos la siguiente estrategia.</p>
+<div class="cell">
 
 </div>
-<div class="listing-no-matching d-none">
-No matching items
+</section><section id="exploración-de-la-data-frames" class="level2"><h2 class="anchored" data-anchor-id="exploración-de-la-data-frames">Exploración de la <em>data frames</em>
+</h2>
+<p>En análisis de datos es común trabajar con bases de datos de gran tamaño. Una de las primeras tareas como analista de datos será conocer las variables con las que se va trabajar y comprender la estructura y conocer las características de los datos</p>
+<div class="cell">
+
 </div>
-</div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+<p>En la etapa de exploración también es común auxiliarse de los métodos gráficos, con la finalidad de visualizar la distribución, relación y dispersión de las observaciones que conforman el <em>data frame</em>.</p>
+<div class="cell">
+
+</div>
+<p>Así mismo, se puede hacer un análisis gráfico de la distribución de una variable o de la relación de pares de variables.</p>
+<div class="cell">
+
+</div>
+<p>Para explorar parte de nuestros datos cuando se cuenta con bases de datos extensas, a menudo es útil mostrar sólo una pequeña parte de todo el conjunto de datos.</p>
+<div class="cell">
+
+</div>
+
+
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");

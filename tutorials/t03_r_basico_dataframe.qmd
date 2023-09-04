@@ -1,0 +1,148 @@
+---
+title: 'R aplicado a Medición Forestal'
+subtitle: 'R Básico: Creación y Manipulación de objetos'
+author: "MSc. Duberlí G. Elera G."
+date: "`r Sys.Date()`"
+format: html
+editor: visual
+resources:
+  - "images/matriz.png"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Creación y Manipulación de objetos en `R`
+
+## Data Frames
+
+Una `data frame` es una estructura de datos que permite almacenar datos de diferentes tipos. En un nivel intuitivo, una *data frame* o marco de datos es como una matriz, con una estructura bidimensional de filas y columnas, con la diferencia que no todas las columnas están condicionadas a tener el mismo tipo de dato.
+
+![](images/dataframe.png){width="30%"}
+
+En `R` una *data frame* se crea con la función `data.frame()`, los argumentos de esta función lo conforman las columnas que constituirán el marco de datos.
+
+## Creación de una *data frame*
+
+Para crear una *data frame* de forma sencilla en `R` partiremos por la creación de vectores de la misma longitud.
+
+```{r }
+#Creación de los vectores que formarán mi data frame
+arbol <- 1:10
+especie <- rep('pino', 10)
+dap <- c(18.1, 14.6, 16.9, 14.3, 12.7,
+         14.3, 19.1, 13.1, 15.9, 14)
+```
+
+En seguida creamos nuestro marco de datos utilizando la función `data.frame()` cuyos argumentos son los tres vectores creados en el paso anterior y le asignamos el nombre `df`.
+
+```{r }
+#Construyendo mi data frame o cuadro de datos
+df <- data.frame(arbol, especie, dap)
+df
+```
+
+En nuestro ejemplo, creamos `df` con datos de mediciones del **dap** de 10 árboles.
+
+Cuando trabajos con mediciones forestales es usual calcular nuevas variables de tal manera que necesitamos ampliar nuestra *data frame* adicionando nuevas columnas, para ello utilizamos la siguiente estrategia.
+
+```{r }
+#Adicionando una nueva columna llamada 'dap_m' en la cual almacenamos el valor del 'dap' en m, dividiendo 'dap' en cm entre 100
+df$dap_m <-  df$dap/100 #df$dap_m crea la nueva columna 'dap_m' en df.
+df
+
+
+#Adicionamos una nueva columna para Calcular el área seccional de los árboles (m2)
+df$as <- (pi/4)*df$dap_m^2
+df
+
+# También es posible adicionar un nuevo vector con el valor de la altura de los árboles
+df$ht <- c(13, 9, 11, 8, 7, 9, 15, 7, 10, 8)
+df
+
+```
+
+## Exploración de la *data frames*
+
+En análisis de datos es común trabajar con bases de datos de gran tamaño. Una de las primeras tareas como analista de datos será conocer las variables con las que se va trabajar y comprender la estructura y conocer las características de los datos
+
+```{r }
+#Consultar el nombre de las variables que componen mi data frame
+names(df)
+
+#Consultar la estructura de los datos
+str(df)
+
+#Consultar las estadísticas descriptivas de los datos
+summary(df)
+```
+
+En la etapa de exploración también es común auxiliarse de los métodos gráficos, con la finalidad de visualizar la distribución, relación y dispersión de las observaciones que conforman el *data frame*.
+
+```{r }
+#Visuaizar mis datos a través de un gráfico que muestra todas mis variables
+plot(df)
+```
+
+Así mismo, se puede hacer un análisis gráfico de la distribución de una variable o de la relación de pares de variables.
+
+```{r }
+#Creando un histrograma de frecuencias del 'dap' para vizualizar la distribución de las observaciones.
+
+hist(df$dap)
+
+#Gráfico que permite vizualizar la relación entre dos variables de mi data frame, en este caso dap vs. altura
+plot(ht ~ dap, df, pch = 19,  col = 'blue')
+#El argumento 'pch' define el tipo de punto y 'col' define el color.
+
+```
+
+Para explorar parte de nuestros datos cuando se cuenta con bases de datos extensas, a menudo es útil mostrar sólo una pequeña parte de todo el conjunto de datos.
+
+```{r }
+#Visualizar parte de mis datos.
+head(df) #Muestra las primeras 6 observaciones
+
+tail(df) #Muestra las últimas 6 observaciones
+
+```
+
+## Manipulación de *data frames*
+
+### Acceso por medio de los índices
+
+Al igual que en vectores y matrices, se puede acceder a uno o un grupo de elementos de una *data frame* a través de sus respectivos índices, recordando que una *data frame* es una estructura de datos bidimensional.
+
+```{r }
+#Acceso a las variables o columnas de una data frame
+df$especie #Accede a la columna de 'df' llamada especie
+
+df[2] #Accede a la columna 2 de 'df'
+
+df['especie'] #Accede a la columna de 'df' llamada especie
+
+#Acceso a más de una columna.
+df[2:4] #Accedo a las columas de 2 a 4 en 'df'
+
+df[c(2,4,6)] #Accedo a las columas 2, 4 y 6 en 'df'
+
+#Para acceder a filas y columnas se aplica el mismo procedimiento aplicado en matrices
+df[5:8, c(2,4,6)]  #Accedo a las filas de la 5 a la 8 y a columas 2, 4 y 6 en 'df'
+
+```
+
+### Modificación de elementos de una variable
+
+Después de acceder a una columna completa de un *data frame* puede existir la necesidad de acceder a un segundo nivel, es decir a uno de los elementos de esa column e incluso hacer modificaciones por elemento.
+
+```{r }
+#Accediendo al elemento número 2 de la columna 'especie' 
+df$especie[2]
+
+#Replazando valores en una variable o columna
+#Modificando el valor delemento número 2 de la columna 'especie'
+df$especie[2] <- 'eucalipto'
+df
+
+```

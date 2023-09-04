@@ -1,0 +1,222 @@
+---
+title: 'R aplicado a Medición Forestal'
+subtitle: 'R Básico: Creación y Manipulación de objetos'
+author: "MSc. Duberlí G. Elera G."
+date: "`r Sys.Date()`"
+format: html
+editor: visual
+resources:
+  - "imagens/matriz.png"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Creación y Manipulación de objetos en `R`
+
+## Matrices
+
+Una matriz es un tipo especial de objeto en `R`, es una colección de elementos del mismo tipo de datos (numéricos, caracteres o lógicos) dispuestos en filas y columnas.
+
+![](imagens/matriz.png){width="30%"}
+
+Para construir una matriz en `R` hacemos uso de la función `matrix()`, que tiene dos argumentos fundamentales, 1) los datos a partir de los cuales se construirá la matriz (`data`) y 2) el número de filas que tendrá la matriz (`nrow`).
+
+## Creación de una matriz
+
+La forma más sencilla de crear una matriz en `R` es partir por la creación de un vector, el cuál será el primer argumento de la función.
+
+```{r }
+#Dado el vector 'x'
+x <- 6:17 #vector de números enteros entre 6 y 17
+x
+
+#Creamos la Matriz 'm1' con 3 filas.
+m1 <- matrix(data = x, nrow = 3)
+m1
+```
+
+Como podemos apreciar, se formó una matriz de 3 filas (`nrow = 3`) y `R` definió el número de columnas de manera automática, en este caso 4 columnas.
+
+Sin embargo, la función `matrix()` permite especificar el tanto número de filas y como el número de columnas, si el usuario así lo prefiere.
+
+```{r }
+#Creación de la matriz 'm2' con 4 filas y 3 columnas
+m2 <- matrix(data = x, nrow = 4, ncol = 3)
+m2
+```
+
+En las matrices `m1` y `m2` verificamos que los elementos de la matriz son ordenados en columnas, ello porque existe un cuarto argumento lógico de la función `matrix()` denominado `byrow` cuyo valor por defecto es `FALSE`, si modificamos ese argumento como `TRUE`, los elementos de la matriz serán ordenados por filas.
+
+```{r }
+#Creación de la matriz 'm3' ordenando por filas
+m3 <- matrix(data = x, nrow = 4, ncol = 3, byrow = T)
+m3
+```
+
+La función `matrix()` tiene un quinto argumento que permite definir los nombres de las filas y las columnas de una matriz. Este argumento se denomina `dimnames` y recibe como una lista con los vectores que asu vez contienen los nombres de las filas y las columnas.
+
+```{r }
+#Como primer paso, creamos los nombres de filas y columnas
+nfila <- c('f1', 'f2', 'f3', 'f4') #Vector con los nombres de las 4 filas
+
+ncolum <- c('c1', 'c2', 'c3') #Vector con los nombres de las 3 columnas
+
+#Creamos la matriz 'm4' con nombres de filas y columnas
+m4 <- matrix(data = x,
+             nrow = 4,
+             ncol = 3,
+             byrow = T,
+             dimnames = list(nfila, ncolum))
+m4
+
+```
+
+Como ya hemos visto en casos anteriores, la sintaxis de `R` permite aplicar una función e ingresar sus argumentos sin necesidad de indicar el nombre de estos, para ello, el valor de cada argumento de la función deberá ser ingresado en el orden que corresponde.
+
+```{r }
+#Creando una matriz, sin especificar el nombre de sus argumentos
+m6 <- matrix(1:20, 4, 5, TRUE) #Debe crear una matriz con elementos numéricos de 1 a 20, con 4 filas, 5 columnas y ordenado por filas.
+m6
+```
+
+## Manipulación de matrices
+
+Las Matrices así como todos los objetos de `R` son suceptibles de manipular, pudiendo hacer modificaciones en todo o en parte de ella.
+
+```{r }
+#Dada la Matriz
+m7 <- matrix(data = 1:12, nrow = 3) 
+
+#Es posible convertir la matriz 'm7' en vector
+v1 <- as.vector(m7)
+v1
+
+#Trasponer una matriz utilizando la función t(), la cual cambia la posición entre filas y columnas.
+m8 <- t(m7)
+m8
+```
+
+Existen funciones que permiten unir dos o más matrices ya sea adicionando nuevas columnas (`cbind()`) o nuevas filas (`rcbind()`).
+
+```{r }
+#Si tengo dos matrices con igual número de filas
+m9 <- matrix(data = 1:12, nrow = 3)
+m9
+m10<- matrix(data = 21:26, nrow = 3)
+m10
+
+#Puedo construir una nueva matriz de 6 columnas y 3 filas, uniendo 'm9' y 'm10' con la función  'cbind()'
+cbind(m9, m10)
+
+#Por el contrario Si tengo dos matrices con igual número de columnas
+m11 <- matrix(data = 1:12, ncol = 3)
+m11
+m12<- matrix(data = 21:26, ncol = 3)
+m12
+
+#Puedo construir una nueva matriz de 6 filas y 3 columnas, uniendo 'm11' y 'm12' con la función  'rbind()'
+rbind(m11, m12)
+
+```
+
+## Operaciones matemáticas con Matrices
+
+Al igual que en las operaciones matemáticas con vectores, cuando realizamos operaciones matemáticas utilizando matrices, dichas operaciones se realizan sobre cada uno de los elementos de la matriz.
+
+```{r }
+#Dada la matriz
+m13 <- matrix(data = 1:12, ncol = 3)
+
+#Sumatoria entre matrices
+m14 <- m13 + m13
+m14
+
+#Sumar una constante a una matriz
+m15 <- m13 + 23
+m15
+
+#Multiplicar una constante a una matriz
+m16 <- m13*2
+m16
+
+#Aplicar una potencia a una matriz
+m13^3
+
+#Aplicar raíz cuadrada a una matriz
+sqrt(m13)
+
+```
+
+**IMPORTANTE**: Cuando se realizan operaciones matemáticas entre matrices, debemos tener en consideración que sus dimensiones, es decir, el número de filas y de columnas, deben ser compatibles.
+
+En su consola de RStudio, intente multiplicar `m1*m2`, las cuales tienen dimensiones diferentes. Verá que, al ejecutar el código le arrojará como resultados un error.
+
+## Acceso a los elementos de un objeto `R`
+
+En multiples ocasiones, necesitaremos acceder a un elemento en particular o a un conjunto de elementos de un determinado objeto en `R`, dicha acción es posible mediante la identificación adecuada de los índices o posiciones de cada elemento del objeto, utilizando para ello el operador `[]`. A continuación de muestra las distintas formas de acceder a los elementos d eun vector o una matriz.
+
+### Accediendo a los índices en vectores
+
+```{r }
+#Dado el vector 'x1'
+x1 <- 6:14
+x1
+#Accedo a sus elementos con el operador '[]'
+x1[5] #accedo a la posición 5 en x1
+
+x1[9] #accedo a la posición 9 en x1
+
+x1[4:7] #Accedo a posiciones consecutivas de 4 a 7
+
+x1[c(2,4,6,8)] #accedo a las posiciones pares
+
+x1[seq(1,9,2)]  #accedo a las posiciones impares
+```
+
+### Accediendo a los índices en Matrices
+
+Para acceder a los elementos de una matriz es necesario indicar el índice a nivel de fila y columna.
+
+```{r }
+#Dada la matriz 'm'
+m <- matrix(data = 1:20, nrow = 4, ncol= 5, byrow = TRUE) 
+m
+
+#Accediendo a la posición 1,1
+m[1,1] 
+
+#Accediendo a la posición 2,3
+m[2,3]
+
+#Accediendo a la posición 3,4
+m[3,4]
+
+#Accediendo a filas completas, fila 3
+m[3, ]
+
+#Accediendo a columnas completas, columna 4
+m[ ,4]
+
+#Accedediendo a columnas y filas consecutivas
+m[3, 2:4]
+
+m[1:3, 2:4]
+
+#Accedediendo a columnas y filas no consecutivas
+m[c(1,3,4), c(2,5)]
+```
+
+### Modificando valores en matrices
+
+```{r }
+#Modificando el valor de la posición 1,1 en la matriz 'm'
+m[1,1] <- 21
+m
+
+#Modificando multiples valores de la matriz'm'
+m[c(1,3,4), c(2,5)] <- 12
+m 
+
+```

@@ -39,7 +39,7 @@ format:
   html:
     fontsize: 1.1em
     theme: 
-      - pulse
+      - flatly
       - html/styles.scss
     toc: false
     code-link: true

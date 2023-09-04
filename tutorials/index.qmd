@@ -1,18 +1,33 @@
 ---
-title: 'R aplicado a Medición Forestal'
-subtitle: 'Tutoriales para estudiantes de Ciencias Forestales'
+title: 'Tutoriales para estudiantes de Ciencias Forestales'
 date: "`r Sys.Date()`"
 format: html
 listing:
   contents: 
-  - tutorials/r_basico_primeros_pasos.qmd
+  - tutorials/t01_r_basico_primeros_pasos.qmd
+  - tutorials/t02_r_basico_matrices.qmd
+  - tutorials/t03_r_basico_dataframe.qmd
+  - tutorials/t04_r_basico_readfiles.qmd
   type: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-# [**R Básico: Primeros Pasos**](r_basico_primeros_pasos.qmd)
-*Autor: MSc. Duberlí G. Elera Gonzales*
+# [**R Básico: Primeros Pasos**](t01_r_basico_primeros_pasos.qmd)
 
 En este tutorial conocerá ¿Qué es `R`?, aprenderá la funcionalidad básica `R`, la sintaxis del mismo, el tipo de operaciones básicas que pueden ser ejecutadas, así como la creación y manipulación de objetos.
+
+# [**R Básico: Matrices**](t02_r_basico_matrices.qmd)
+
+En este tutorial conocerá el tipo de objeto *Matrix*, un tipo especial de objeto en `R`. Una matriz es una colección de elementos del mismo tipo de datos (numéricos, caracteres o lógicos) dispuestos en filas y columnas.
+
+# [**R Básico: Data Frame**](t03_r_basico_dataframe.qmd)
+
+Una `data frame` es uno de los objetos más utilizados en `R`, es una estructura de datos que permite almacenar datos de diferentes tipos. En un nivel intuitivo, una *data frame* o marco de datos es como una matriz, con una estructura bidimensional de filas y columnas, con la diferencia que no todas las columnas están condicionadas a tener el mismo tipo de dato.
+
+# [**R Básico: Importar Datos**](t04_r_basico_readfiles.qmd)
+
+Cuando trabajamos con datos, utilizamos diversos tipos de fuentes, esa particularidad hace que los datos que vamos a utilizar estén disponibles en diferentes tipos de archivos y `R` puede leer diferentes tipos de archivos, desde archivos de texto `.txt` hasta archivos georeferenciados como *shapefile* `.shp`.
+
+
