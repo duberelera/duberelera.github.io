@@ -2,7 +2,12 @@
 title: "Artículos Científicos"
 subtitle: "MSc. Duberli G. Elera Gonzales"
 date: "`r Sys.Date()`"
+format: html
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 ## [**Improving 3-PG calibration and parameterization using artificial neural networks**](https://doi.org/10.1016/j.ecolmodel.2023.110301)
 
